@@ -472,13 +472,14 @@ padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 31px;
+    padding-left: 256px;
+    padding-right: 256px;
+    padding-top:63px;
 }
 .pricing__card1{
     border: 1px solid #DEDEDE;
     border-radius: 10px;
-    /* display: flex;
-flex-direction: column;
-align-items: flex-start; */
+
 }
 .pricing__heading__main{
     font-family: Poppins;
@@ -488,6 +489,7 @@ align-items: flex-start; */
     text-align: center;
     letter-spacing: 0.1px;
     color: #000000;
+    padding-top: 50px;
 }
 .pricing__text__main{
     font-family: Poppins;
@@ -499,12 +501,14 @@ align-items: flex-start; */
     color: #5C5C5C;
 }
 .pricing__img{
-    /* display: flex;
-    justify-content: center; */
+    padding-top:30px;
 }
 .pricing__price{
     display: flex;
     align-items: center; 
+    justify-content: center;
+    padding-bottom: 45px;
+    padding-top:30px;
 }
 
 .pricing__heading{
@@ -524,9 +528,7 @@ align-items: flex-start; */
     color: #30D7BA;
 }
 .pricing__texts{
-     /* display: flex;
-    align-items: center; */
-
+    text-align: center;
 }
 .pricing__text{
     font-family: Poppins;
@@ -535,19 +537,19 @@ align-items: flex-start; */
     line-height: 27px;
     letter-spacing: 0.2px;
     color: #000000;
+    padding-bottom: 20px;
 }
 .pricing__price2{
-    /* display: flex;
-    justify-content: center; */
+
 }
 .pricing__button{
     padding-top:36px;
-    /* display: flex;
-    justify-content: center; */
     padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 .pricing__button2{
-    padding:18px 82px;
+    padding:18px 81px;
     background: #03D6F3;
     box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
     border-radius: 39px;
@@ -560,14 +562,10 @@ align-items: flex-start; */
     margin-right: 22px;
 }
 .pricing__card2{
-    /* display: flex;
-    flex-direction: column; */
     border: 1px solid #DEDEDE;
     border-radius: 10px;
 }
 .pricing__card3{
-    /* display: flex;
-    flex-direction: column; */
     border: 1px solid #DEDEDE;
     border-radius: 10px;
 }
@@ -580,7 +578,8 @@ align-items: flex-start; */
     position: relative; 
 }
 .line {
-    position: relative; 
+    display: flex;
+    justify-content: center;
     width: 1110px;
     height: 1px;
     background: #E0E0E0;
@@ -613,6 +612,7 @@ align-items: flex-start; */
     justify-content: center;
     align-items: center;
 }
+
 .subscribe__button2{
     padding:18px 46px;
     background: #03D6F3;
