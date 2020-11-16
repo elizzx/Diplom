@@ -1,3 +1,23 @@
+mixin pricingCard(title, image, price)
+  .pricing__card
+    h1.pricing__heading__main #{title}
+    p.pricing__text__main Brief price Description
+    .pricing__img
+      img(src='./img/' + image, alt='Pic')
+    .pricing__price
+      .pricing__price1
+        h1.pricing__heading #{price}
+      .pricing__price2
+        h1.pricing__heading2 $
+        p.pricing__text__main Per/ month
+    .pricing__texts
+      p.pricing__text Only 2 Operators
+      p.pricing__text Abandoned Cart
+      p.pricing__text Facebook &amp; Instagram Ads
+      p.pricing__text Order Notifications
+      p.pricing__text Landing Pages
+    a.pricing__button(href='#') Order Now
+
 doctype html
 head
   meta(charset='UTF-8')
@@ -28,7 +48,7 @@ header.header
           a.header__button2(href='#') try for free
       .header__screen
         img(src='./img/screen.png', alt='Pic')
-        
+
 #about.content
   .container
     .content__wrapper
@@ -97,7 +117,7 @@ header.header
             | their schedule.
           .finance__button
             a.finance__button1(href='#') Button
-  // текст идет не по макету
+  
   .businesse
     .container
       .businesse__wrapper
@@ -127,63 +147,10 @@ header.header
           h1.pricing__heading__basis Simple Pricing for Your Team
           p.pricing__text__basis Slate helps you see how many more days you need
         #product.pricing__cards
-          .pricing__card1
-            h1.pricing__heading__main Education
-            p.pricing__text__main Brief price Description
-            .pricing__img
-              img(src='./img/ph1.png', alt='Pic')
-            .pricing__price
-              .pricing__price1
-                h1.pricing__heading 0
-              .pricing__price2
-                h1.pricing__heading2 $
-                p.pricing__text__main Per/ month
-            .pricing__texts
-              p.pricing__text Only 2 Operators
-              p.pricing__text Abandoned Cart
-              p.pricing__text Facebook &amp; Instagram Ads
-              p.pricing__text Order Notifications
-              p.pricing__text Landing Pages
-            .pricing__button
-              a.pricing__button2(href='#') Order Now
-          .pricing__card2
-            h1.pricing__heading__main Professional
-            p.pricing__text__main Brief price Description
-            .pricing__img
-              img(src='./img/ph2.png', alt='Pic')
-            .pricing__price
-              .pricing__price1
-                h1.pricing__heading 10
-              .pricing__price2
-                h1.pricing__heading2 $
-                p.pricing__text__main Per/ month
-            .pricing__texts
-              p.pricing__text Only 2 Operators
-              p.pricing__text Abandoned Cart
-              p.pricing__text Facebook &amp; Instagram Ads
-              p.pricing__text Order Notifications
-              p.pricing__text Landing Pages
-            .pricing__button
-              a.pricing__button2(href='#') Order Now
-          .pricing__card3
-            h1.pricing__heading__main Business
-            p.pricing__text__main Brief price Description
-            .pricing__img
-              img(src='./img/ph3.png', alt='Pic')
-            .pricing__price
-              .pricing__price1
-                h1.pricing__heading 99
-              .pricing__price2
-                h1.pricing__heading2 $
-                p.pricing__text__main Per/ month
-            .pricing__texts
-              p.pricing__text Only 2 Operators
-              p.pricing__text Abandoned Cart
-              p.pricing__text Facebook &amp; Instagram Ads
-              p.pricing__text Order Notifications
-              p.pricing__text Landing Pages
-            .pricing__button
-              a.pricing__button2(href='#') Order Now
+          +pricingCard('Education', 'ph1.png', 0)
+          +pricingCard('Professional', 'ph2.png', 10)
+          +pricingCard('Business', 'ph3.png', 99)
+
   .subscribe
     .container
       .subscribe__wrapper
